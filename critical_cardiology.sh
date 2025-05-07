@@ -22,3 +22,8 @@ while IFS=',' read -r name age department condition; do
     fi
 done < "$file"
 
+echo ""
+echo "✅ Total patients processed: $total_patients"
+echo "🚨 Total Cardiology-Critical patients: $critical_count"
+echo "📄 Detailed log saved in: $log_file"
+
